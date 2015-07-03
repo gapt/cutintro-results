@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 if [ ! -d "$1" ]; then
   echo "Usage: ./do_analysis.sh YYYY-MM-DD"
