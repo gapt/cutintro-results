@@ -108,7 +108,7 @@ for line in f:
       cutintro_other_exception += 1
       cutintro_other_exception_total += 1
     else:
-      print "Unrecognized status: " + status
+      print("Unrecognized status: " + status)
 
 # Last one
 summary.write(title)
