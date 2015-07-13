@@ -14,8 +14,6 @@ pushd gapt
   git pull
   git show --summary >$log_dir/revision.txt
 
-  sbt assembly
-
   pushd testing/TSTP
     ./get-proofs prover9
   popd
@@ -23,10 +21,9 @@ pushd gapt
     tar xf veriT-SMT-LIB-QF_UF.tar.gz
   popd
 
-  cp ../log4j.xml .
-  ./cli.sh ../runcutintro.scala
+  sbt 'testing/run-main at.logic.gapt.testing.testCutIntro'
 
-  cp logs/* $log_dir
+  cp results.json $log_dir
 
 popd
 
