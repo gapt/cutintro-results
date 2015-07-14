@@ -16,6 +16,7 @@ pushd gapt
 
   pushd testing/TSTP
     ./get-proofs prover9
+    ./get-proofs leanCoP
   popd
   pushd testing/veriT-SMT-LIB
     tar xf veriT-SMT-LIB-QF_UF.tar.gz
