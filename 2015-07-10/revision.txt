@@ -1,0 +1,6 @@
+commit 6f8ac965ea7bd5e02f587bbbd65164d8f38bc5d4
+Author: Martin <marty@logic.at>
+Date:   Thu Jul 9 11:01:33 2015 +0200
+
+    some changes to the if-then-else script, added top/bottom to thf export, bugfix in quantification rules
+
