@@ -1,0 +1,6 @@
+commit e4643f8328df588122355a405bb27870ee3da8cf
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Wed Jul 15 13:17:53 2015 +0200
+
+    Move leanCoP testing to the end.
+
