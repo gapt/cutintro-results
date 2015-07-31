@@ -1,0 +1,6 @@
+commit e4f16a2a0fd982344eb4890662b47f4006e3dbb8
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Fri Jul 24 12:22:54 2015 +0200
+
+    Measure actual MaxSAT solver time.
+
