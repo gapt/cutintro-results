@@ -1,0 +1,6 @@
+commit abb300e7ff8cc68dd30aaeb8abe3744d5ac3fd17
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Fri Aug 21 09:21:20 2015 +0200
+
+    Update non-trivial prover9 TSTP termset data.
+
