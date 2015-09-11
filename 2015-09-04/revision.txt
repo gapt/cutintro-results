@@ -1,0 +1,6 @@
+commit 71d2d106895605aeef2e9bd52cec3add2235f555
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Fri Sep 4 14:40:41 2015 +0200
+
+    Cut-intro experiments: fix endless loop in proof sequences.
+
