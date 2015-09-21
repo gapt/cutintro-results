@@ -1,0 +1,27 @@
+commit a9ef998032044673064af89c1176dfef54b0f7d1
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Fri Sep 18 16:42:52 2015 +0200
+
+    Kill all external processes on timeouts.
+    
+    Apparently just killing the JVM won't kill the subprocesses.  So we now
+    have a unified interface for calling external programs that
+    
+    * can directly write to stdin (this is not safe with Scala's Process
+      class, so I have implemented it on top of java.lang.ProcessBuilder),
+    
+    * kills the process if any exception happens (ThreadDeath, OutOfMemory,
+      ...) and also if the JVM exits,
+    
+    * can return both stdout and exit value.
+    
+    The new runProcess method should solve most of our external process
+    troubles, hopefully.
+    
+    This commit also also adapts all non-testing uses of temporary files to
+    withTempFile, which, just as runProcess, tries very hard to free the
+    resources as soon as possible.
+    
+    Really fixes #377.  Also see #338.
+
+ create mode 100644 src/main/scala/at/logic/gapt/utils/runProcess.scala
