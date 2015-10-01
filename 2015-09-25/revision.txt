@@ -1,0 +1,6 @@
+commit 64269d0243ee55158544fd40f8416e7586f28abf
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Fri Sep 25 15:43:10 2015 +0200
+
+    cut-intro, non-prenex case: fall back to input clauses of the resolution proof.
+
