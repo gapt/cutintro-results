@@ -6,5 +6,6 @@ stdenv.mkDerivation {
     pandas matplotlib
     sbt openjdk8
     prover9 veriT
+    parallel
   ];
 }
