@@ -36,7 +36,7 @@ parallel --timeout 60 \
   -Xmx1G -Xss40m \
   -XX:ParallelGCThreads=1 -XX:ConcGCThreads=1 \
   at.logic.gapt.testing.testCutIntro '{1}' '{2}' \
-  :::: experiment_list
+  :::: experiment_list || true
 
 pushd results
   java -cp $gapt_jar at.logic.gapt.testing.collectExperimentResults >../results.json
