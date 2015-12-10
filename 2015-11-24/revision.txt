@@ -1,0 +1,6 @@
+commit 781ddc5d765180511d8438eda6c253190e3d855e
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Tue Nov 24 17:41:30 2015 +0100
+
+    Use GNU parallel for cut-intro testing.
+
