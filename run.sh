@@ -7,7 +7,8 @@ if [ ! -d $tstp_files ]; then
   exit 1
 fi
 
-do_experiments=`readlink -f do_experiments.sh`
+setup_experiments=`readlink -f .setup_experiments.sh`
+do_experiments=`readlink -f .do_experiments.sh`
 
 current_date=`date +%Y-%m-%d`
 
@@ -18,7 +19,7 @@ log_dir=`readlink -f $current_date`
 
 pushd gapt
 
-  # git clean -fdx
+  git clean -fdx
   git pull
   git show --summary >$log_dir/revision.txt
 
@@ -32,19 +33,14 @@ pushd gapt
 
   mkdir experiments
   pushd experiments
-    mkdir proofs
-    ln -s $verit_files $tstp_files proofs
+    proof_dir=proofs
+    mkdir $proof_dir
+    ln -s $verit_files $tstp_files $proof_dir
 
-    $do_experiments $gapt_jar
-
-    cp results.json $log_dir
+    . $setup_experiments
+    . $do_experiments
   popd
 
 popd
 
-./do_analysis.sh $current_date || true
-
-git add $current_date
-git commit -m "Experiment results from $current_date."
-git pull --rebase
-git push
+. ./.finish.sh
