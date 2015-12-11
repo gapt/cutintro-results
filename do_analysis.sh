@@ -9,7 +9,7 @@ set -x
 cd "$1"
 
 sed '
-  s@filename = \\".*\\"@filename = \\"results.json\\"@;
+  s@filename = \\".*\\"@filename = \\"results.json.xz\\"@;
   s@previous_filename = \\".*\\"@previous_filename = \\"../2015-03-15/CutIntroDataLog.txt\\"@;
 ' ../cutintro.ipynb >cutintro.ipynb
 ipython3 nbconvert --inplace --execute --to notebook cutintro.ipynb
