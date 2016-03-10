@@ -1,4 +1,4 @@
-methods="1_dtable many_dtable 1_maxsat 1_1_maxsat 2_maxsat 2_2_maxsat reforest"
+methods="1_dtable many_dtable many_dtable_ss 1_maxsat 1_1_maxsat 2_maxsat 2_2_maxsat reforest"
 
 test -f experiment_list || (
   for seq_name in \
