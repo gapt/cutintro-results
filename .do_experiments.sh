@@ -2,7 +2,7 @@ parallel --timeout 60 \
   --colsep ' ' \
   --files --results results \
   --joblog joblog --resume \
-  --progress \
+  --progress --bar --eta \
   java -cp $gapt_jar \
   -Xmx1G -Xss40m \
   -XX:ParallelGCThreads=1 -XX:ConcGCThreads=1 \
@@ -10,5 +10,5 @@ parallel --timeout 60 \
   :::: experiment_list || true
 
 pushd results
-  java -Xmx8g -cp $gapt_jar at.logic.gapt.testing.collectExperimentResults >../results.json
+  java -Xmx16g -cp $gapt_jar at.logic.gapt.testing.collectExperimentResults >../results.json
 popd
