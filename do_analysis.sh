@@ -12,4 +12,4 @@ sed '
   s@filename = \\".*\\"@filename = \\"results.json.xz\\"@;
   s@previous_filename = \\".*\\"@previous_filename = \\"../2015-03-15/CutIntroDataLog.txt\\"@;
 ' ../cutintro.ipynb >cutintro.ipynb
-ipython3 nbconvert --inplace --execute --to notebook cutintro.ipynb
+jupyter nbconvert --inplace --execute --to notebook cutintro.ipynb
