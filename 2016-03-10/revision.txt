@@ -1,0 +1,6 @@
+commit b38a7f5d185ef00dd2337f79c6a44c14e0285451
+Author: Gabriel Ebner <gebner@gebner.org>
+Date:   Thu Mar 10 14:37:19 2016 +0100
+
+    Remove reference to XML tape proof.
+
