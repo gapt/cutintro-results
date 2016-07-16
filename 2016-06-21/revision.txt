@@ -1,0 +1,7 @@
+commit 95dc69b64704a2ac1d99b4a2b514a022b26f37e7
+Merge: 53f7a2b 5caadb7
+Author: Sebastian Zivota <ouroboros@gmx.at>
+Date:   Tue Jun 21 16:56:32 2016 +0200
+
+    Merge branch 'master' of github.com:gapt/gapt
+
