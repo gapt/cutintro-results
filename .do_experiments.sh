@@ -10,5 +10,5 @@ parallel --timeout 60 \
   :::: experiment_list || true
 
 pushd results
-  java -Xmx16g -cp $gapt_jar at.logic.gapt.testing.collectExperimentResults >../results.json
+  java -Xmx24g -cp $gapt_jar at.logic.gapt.testing.collectExperimentResults >../results.json
 popd
